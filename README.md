@@ -2,10 +2,14 @@
 
 Targets `https://play.ezygamers.com/` with planning, ranking, execution (Playwright), analysis, and reporting via FastAPI backend and minimal frontend.
 
+I have setup a sequential approach so executer agent may take some time and the test cases may fail because the game ui canvas was having some issue in navigating to new game button for every test case . Since its just for a poc i have not gone for much debugging and full agent execution ,a simple demo is depicted here.
+
 ## Quick Start
 
 1. Python 3.10+
 2. Install deps:
+
+First make a Virtualenv using virtualenv venv and activate it then install the requirements there
 
 ```bash
 pip install -r requirements.txt
@@ -20,9 +24,9 @@ python run.py
 ```
 
 4. Open frontend:
-- Open `frontend/index.html` in a browser, or serve statically:
+I have used the streamlit for simple ui 
 ```bash
-python -m http.server 3000 -d frontend
+streamlit run streamlit_app.py
 ```
 
 5. Workflow:
@@ -48,3 +52,4 @@ If `OPENAI_API_KEY` is set, Planner uses LangChain+OpenAI to generate cases; oth
 
 ## Notes
 - This is a POC; selectors are heuristic and may need tuning for the target game UI.
+
