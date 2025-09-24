@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
+jinja2
+
+langchain
+langchain-core
+langchain-community
+langchain-openai
+
+playwright
+
+httpx
+orjson
+streamlit
